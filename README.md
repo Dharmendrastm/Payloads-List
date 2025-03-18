@@ -1,4 +1,3 @@
----
 **Reflected Cross-Site Scrip ng (XSS)**
 
 1. Basic alert: 
