@@ -18,7 +18,7 @@ Or encoded version:
 
 4. Using an Event Handler: 
 
-<a href="#" onclick="alert('XSS')">Click me!</a> 
+<a href="#" onclick="alert(1)">Click me!</a> 
 
 5. Advanced Payload (using IIFE): 
 
