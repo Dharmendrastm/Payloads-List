@@ -1,9 +1,1 @@
-login:
-<script>alert(document.cookie)</script>
 
-Subscribe:
-Email:
-<script>code to mail him user information</alert>
-Login Nmae:
-<iframe src="....org"></iframe>
-<script>alert("XSS is here")</alert>
