@@ -15,6 +15,17 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+------
 **Cross-Site Scripting (XSS) Payloads**
 
 ## **Reflected Cross-Site Scripting (XSS)**
